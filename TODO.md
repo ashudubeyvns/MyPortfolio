@@ -1,16 +1,22 @@
-# TODO - Add Logo Image to Header
+# TODO - Upload Portfolio to GitHub
 
-## Task: Replace text-based logo with image logo (Ashulogo.png)
+## Steps Completed:
+- [x] Check environment and install required tools (brew, gh, mysql)
+- [x] Verify GitHub CLI is installed and user is authenticated
+- [x] Read project files to understand structure
+- [x] Read existing README.md
 
-### Steps to Complete:
+## Steps Remaining:
+- [ ] Initialize git repository in MyPortfolio folder
+- [ ] Create .gitignore file
+- [ ] Commit all files
+- [ ] Create GitHub repository and push code
+- [ ] Provide final instructions for GitHub Pages
 
-1. [x] Update index.html - Replace text logo with image logo
-   - Changed `<a href="#" class="logo">Ashutosh<span>.</span></a>` to use `<img>` tag
-   - Path: `image/Ashulogo.png`
-   
-2. [x] Update css/style.css - Add proper styling for logo image
-   - Set max-width/height to fit properly in header
-   - Ensure it works on mobile and desktop
-   - Maintain proper vertical alignment
-
-### Status: Completed
+## Project Files to Push:
+- index.html
+- css/style.css
+- js/script.js
+- assest/AshutoshDResume.pdf
+- image/* (project screenshots and logos)
+- README.md
