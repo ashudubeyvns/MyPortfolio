@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashutosh Dubey | Java Full Stack Developer</title>
+<meta name="description" content="Portfolio of Ashutosh Dubey - Fresher & Java Full Stack Developer specializing in Spring Boot, React.js, and AWS.">
+<meta name="keywords" content="Ashutosh Dubey, Java Developer, Full Stack Developer, Spring Boot, React, AWS, Portfolio">
+<meta name="author" content="Ashutosh Dubey">
+<meta property="og:title" content="Ashutosh Dubey | Java Full Stack Developer">
+<meta property="og:description" content="Building scalable production-grade applications using Java, Spring Boot, React.js & AWS.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="image/ashu.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<!-- Scroll to Top -->
+<button id="scrollTop" onclick="scrollToTop()" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Particles -->
+<div id="tsparticles"></div>
+
+<header id="header">
+  <a href="#" class="logo">
+    <img src="image/Ashulogo.png" alt="Ashutosh">
+  </a>
+
+  <nav id="navbar">
+    <a href="#about" class="nav-link active">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="left">
+    <p class="hero-subtitle">Hello, I'm</p>
+    <h1>Ashutosh Dubey</h1>
+    <p class="hero-role">I'm a <span id="typing-text"></span><span class="cursor">|</span></p>
+    <p class="hero-desc">Aspiring Software Engineer | Java Full Stack Developer | Spring Boot | React.js | Backend Developer using Java, Spring Boot, React.js & AWS.</p>
+
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="openHire()">Hire Me</button>
+      <a href="#projects" class="btn-secondary">View Work</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/ashudubeyvns" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:ashutoshdubeyvns@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="hero-image-wrapper">
+      <img src="image/ashu.png" alt="Ashutosh Dubey">
+      <div class="blob"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-header">
+    <h2>About Me</h2>
+    <p>Get to know me better</p>
+  </div>
+  <div class="about-content">
+    <div class="about-text reveal">
+      <p>I'm an <strong>Fresher</strong> with strong backend and frontend development skills. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+      <p>My journey in tech started with a curiosity for how things work on the web, which quickly evolved into a passion for building full-stack applications that make a real impact.</p>
+      <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or writing technical articles.</p>
+<a href="assest/AshutoshDResume.pdf" class="btn-primary" download>
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <span class="stat-num" data-target="75">0</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="Fresher">0</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="75">0</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="100">0</span>
+        <span class="stat-label">Commits</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header">
+    <h2>Skills</h2>
+    <p>Technologies I work with</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category reveal">
+      <h3><i class="fas fa-code"></i> Languages</h3>
+      <div class="skill-item">
+        <span>Java</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>JavaScript</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>SQL</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+      <div class="skill-item">
+        <span>Spring Boot</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>React.js</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Node.js</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <h3><i class="fas fa-database"></i> Database & Cloud</h3>
+      <div class="skill-item">
+        <span>MySQL</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>AWS</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span>Git & GitHub</span>
+        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <p>Some of my recent work</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="image/EmployeeManagementSystem .png" alt="Employee Management System">
+        <div class="project-overlay">
+          <a href="https://github.com/ashudubeyvns/employee-management-system" class="project-link" onclick="showToast('Live demo coming soon!')" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/ashudubeyvns/employee-management-system" class="project-link" onclick="showToast('GitHub repo coming soon!')" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>Employee Management System</h3>
+        <p>A full-stack CRUD application to manage employee records with role-based access control, built with Spring Boot and React.</p>
+        <div class="project-tags">
+          <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="image/CaloriFy.png" alt="CaloriFy">
+        <div class="project-overlay">
+          <a href="#" class="project-link" onclick="showToast('Live demo coming soon!')" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" class="project-link" onclick="showToast('GitHub repo coming soon!')" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>CaloriFy</h3>
+        <p>A calorie tracking application that helps users monitor daily nutrition intake with food database search and analytics dashboard.</p>
+        <div class="project-tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Chart.js</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="image/BrainBrew.png" alt="BrainBrew">
+        <div class="project-overlay">
+          <a href="https://ashudubeyvns.github.io/BrainBrew/" class="project-link" onclick="showToast('Live demo coming soon!')" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/ashudubeyvns/BrainBrew" class="project-link" onclick="showToast('GitHub repo coming soon!')" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>BrainBrew</h3>
+        <p>An AI-powered brainstorming and note-taking tool with real-time collaboration features and markdown support.</p>
+        <div class="project-tags">
+          <span>React</span><span>Spring Boot</span><span>WebSocket</span><span>AWS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-header">
+    <h2>Contact</h2>
+    <p>Let's work together</p>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info reveal">
+      <h3>Get in Touch</h3>
+      <p>Have a project in mind or want to hire me? Feel free to reach out. I'm always open to discussing new projects, creative ideas or opportunities.</p>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <span>Email</span>
+          <a href="mailto:ashutoshdubeyvns@gmail.com">ashutoshdubeyvns@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <span>Location</span>
+          <p>India</p>
+        </div>
+      </div>
+      <div class="contact-social">
+        <a href="https://github.com/ashudubeyvns" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ashutoshdubeyvns@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required>
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <i class="fas fa-comment"></i>
+      </div>
+      <button type="submit" class="btn-primary">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p class="footer-logo">Ashutosh</p>
+    <p class="footer-text">Building digital experiences with passion & precision.</p>
+    <div class="footer-social">
+      <a href="https://github.com/ashudubeyvns" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:ashutoshdubeyvns@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p> Ashutosh Dubey. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="hireModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeHire()" aria-label="Close">&times;</button>
+    <div class="modal-icon"><i class="fas fa-briefcase"></i></div>
+    <h2>Hire Me</h2>
+    <p>I'm currently open for freelance projects and full-time opportunities.</p>
+    <div class="modal-contact">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:ashutoshdubeyvns@gmail.com">ashutoshdubeyvns@gmail.com</a>
+    </div>
+    <button class="btn-primary" onclick="closeHire()">Close</button>
+  </div>
+</div>
+
+</body>
+</html>
