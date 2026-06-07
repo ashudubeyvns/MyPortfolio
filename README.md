@@ -1,6 +1,6 @@
 # 👨‍💻 Ashutosh Dubey | Portfolio
 
-<p align="">
+<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=Ashutosh%20Dubey&fontSize=90" alt="Header Banner"/>
 </p>
 
